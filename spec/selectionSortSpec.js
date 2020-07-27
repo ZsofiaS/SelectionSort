@@ -13,4 +13,12 @@ describe('Sort', () => {
       expect(sort.findSmallest([3, 2, 1])).toEqual(2);
     })
   })
+  describe('#selectionSort', () => {
+    it('returns a sorted array when given input [1, 2, 3]', () => {
+      expect(sort.selectionSort([1, 2, 3])).toEqual([1, 2, 3]);
+    })
+    it('returns a sorted array when given input [3, 2, 1]', () => {
+      expect(sort.selectionSort([3, 2, 1])).toEqual([1, 2, 3]);
+    })
+  })
 })
